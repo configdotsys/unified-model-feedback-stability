@@ -351,7 +351,7 @@ In transfer-function terms:
 
 Both descriptions express the same idea:
 
-> stability is determined by the modes of the closed-loop system, not by the plant alone.
+> Stability is determined by the modes of the closed-loop system, not by the plant alone.
 
 ---
 
