@@ -11,7 +11,7 @@ The emphasis is not on controller design or tuning, but on understanding how dif
 ## Document
 
 - **A Unified Physical Model of Feedback Stability in Control Theory**  
-  [Read the document](./unified-feedback-stability.md)
+  [Read the document](./unified-model-feedback-stability.md)
 
 ---
 
