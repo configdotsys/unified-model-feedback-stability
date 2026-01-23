@@ -794,9 +794,9 @@ Let’s use physically meaningful notation:
 
 | Symbol            | Meaning                                                                 |
 | ----------------- | ----------------------------------------------------------------------- |
-|$ P_{\text{orig}}$ | Number of open-loop RHP poles (unstable modes before feedback)     |
-|$ P_{\text{fb}}$   | Number of closed-loop RHP poles (unstable modes after feedback)    |
-|$ N$               | Net effect of feedback on system stability                            |
+|$P_{\text{orig}}$ | Number of open-loop RHP poles (unstable modes before feedback)     |
+|$P_{\text{fb}}$   | Number of closed-loop RHP poles (unstable modes after feedback)    |
+|$N$               | Net effect of feedback on system stability                            |
 
 Then the physically grounded version of the Nyquist equation is:
 
