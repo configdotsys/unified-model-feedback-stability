@@ -914,7 +914,7 @@ $$
 
 This cosine curve gives the net suppression effect:
 
-| Phase $ \phi $ | $ -\cos(\phi) $ | Interpretation |
+| Phase $\phi$ | $-\cos(\phi)$ | Interpretation |
 | ---------------- | ------------------ | -------------- |
 | $0^\circ$      | −1                 | Fully subtractive (100% shaded) |
 | $30^\circ$     | ≈ −0.87            | Mostly subtractive |
