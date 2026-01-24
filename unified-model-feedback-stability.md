@@ -598,7 +598,7 @@ $$
 At this point, nothing about the plant’s internal dynamics has changed.
 The unstable mode still exists.
 
-The role of feedback is not to remove this mode, but to determine whether the closed-loop characteristic equation admits unstable solutions.
+The role of feedback is not to remove this mode, but to determine whether the closed-loop characteristic equation results in unstable solutions.
 
 ---
 
@@ -675,6 +675,97 @@ It infers the presence or absence of unstable modes in the closed-loop system.
 
 ---
 
+At this point, the remaining question is not mathematical, but physical: why does phase delay determine whether feedback suppresses or reinforces motion?
+
+---
+
+## Phase, Accumulation, and Turning Points
+
+Phase behavior in feedback systems arises from physical accumulation.
+
+Many system variables do not respond directly to input, but to the time integral of upstream quantities. Examples include position as the integral of velocity, capacitor voltage as the integral of current, and inductor current as the integral of voltage.
+
+These relationships impose a fixed causal ordering:
+
+$$
+\text{input}\quad\rightarrow\quad\text{rate}\quad\rightarrow\quad\text{accumulated state}
+$$
+
+Because accumulated quantities represent stored history, they cannot change direction until the quantities driving them have already done so.
+
+As a result, turning points in accumulated states occur later in time than turning points in their corresponding rates. This is a geometric property of smooth functions and does not depend on modeling framework.
+
+This delay is the physical origin of phase lag.
+
+---
+
+### Poles as Accumulation
+
+In linear system models, accumulation appears as integration.
+
+In the Laplace domain, integration corresponds to division by $s$, which introduces a pole in the transfer function. A pole therefore represents a physical storage process within the system.
+
+Each pole places the system’s response further downstream in the accumulation chain.
+
+Because accumulated variables reach their turning points later, poles introduce phase lag. This lag reflects the delay between the onset of a disturbance and the system’s ability to respond to it.
+
+---
+
+### Zeros as Rate Sensitivity
+
+Zeros represent the complementary effect.
+
+In the Laplace domain, multiplication by $s$ corresponds to differentiation in time. Differentiation emphasizes rate of change rather than accumulated state.
+
+A zero therefore increases the system’s sensitivity to upstream quantities in the causal chain - such as velocity, current, or slope - which evolve earlier in time than the states they ultimately produce.
+
+By responding to rate information, the system reacts earlier within a motion cycle. This produces phase lead.
+
+This behavior does not imply prediction or foresight. The response occurs earlier because the measured quantity itself exists earlier in the system’s causal progression.
+
+---
+
+### Turning Points and Feedback Timing
+
+Feedback stability depends on whether corrective action arrives before or after the system passes a turning point.
+
+If feedback arrives after the accumulated state has already reversed direction, the correction reinforces motion rather than opposing it. If feedback acts earlier - while the rate is still changing - it suppresses motion.
+
+Phase margin therefore reflects how much accumulation delay exists between sensing and actuation.
+
+Viewed physically, phase margin is a measure of how far downstream in the accumulation chain the feedback signal is applied.
+
+---
+
+### Summary
+
+* Accumulation delays turning points
+* Poles represent accumulation and introduce phase lag
+* Zeros increase rate sensitivity and introduce phase lead
+* Stability depends on whether feedback acts before or after critical turning points
+
+This interpretation remains consistent across time-domain, frequency-domain, and state-space descriptions.
+
+---
+
+## Phase, Accumulation, and the Meaning of Nyquist
+
+The Nyquist criterion does not introduce a new physical mechanism. It evaluates the consequences of phase accumulation already present in the system.
+
+Phase lag arises because physical systems accumulate energy and state over time. Each layer of accumulation - represented mathematically by integration - delays the system’s turning points. Poles therefore correspond to physical storage processes, and each contributes additional delay between disturbance and corrective response.
+
+Zeros introduce the complementary effect by making the system sensitive to rates of change. Rate information appears earlier in time than accumulated state, so zeros reduce effective delay and introduce phase lead.
+
+From this perspective, phase is not an abstract frequency-domain quantity. It represents the timing relationship between when a disturbance begins to grow and when feedback-generated correction returns to oppose it.
+
+Nyquist analysis examines whether, for any system mode that satisfies the characteristic equation, the accumulated phase delay through the loop is sufficient to invert the intended sign of feedback. When the loop transmission reaches a phase shift of approximately $180^\circ$ with magnitude equal to or exceeding unity, corrective action arrives aligned with - rather than opposing - the system’s motion.
+
+The Nyquist plot does not describe how instability develops in time. It determines whether the loop contains conditions under which accumulated delay converts negative feedback into reinforcement.
+
+Encirclement of the critical point therefore indicates not pole motion, but the existence of a closed-loop mode for which phase accumulation causes feedback to act too late to stabilize the system.
+
+---
+
 ## What Does Feedback *Do*, Physically?
 
 ### In an Open-Loop Unstable System (Like an Inverted Pendulum):
@@ -741,7 +832,7 @@ Interpreted physically, this corresponds to:
 
 The number of full rotations around −1 reflects:
 
-> Whether the loop admits conditions under which small perturbations become self-reinforcing.
+> Whether the loop contains conditions under which small perturbations become self-reinforcing.
 
 If we know how many unstable poles we started with (open-loop), and we can observe how the loop’s return signal winds around the danger point (−1), then we can determine whether those unstable tendencies are suppressed or amplified by feedback.
 
@@ -771,7 +862,7 @@ This corresponds to alignment near the critical −1 condition.
 
 That is what encircling −1 indicates:
 
-> That the closed-loop system admits one or more modes whose feedback gain and phase configuration lead to self-reinforcing response growth.
+> That the closed-loop system results in one or more modes whose feedback gain and phase configuration lead to self-reinforcing response growth.
 
 ---
 
