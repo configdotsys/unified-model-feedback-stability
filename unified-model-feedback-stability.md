@@ -650,9 +650,11 @@ In both cases, Nyquist does not locate poles or describe how instability develop
 It answers a single question:
 
 > Does the closed-loop characteristic equation
+> 
 > $$
 > 1 + G(s)H(s) = 0
 > $$
+> 
 > admit solutions in the right half-plane?
 
 ---
@@ -813,7 +815,7 @@ $$
 
 > The loop has exactly enough gain and phase shift to turn a small disturbance into a self-reinforcing oscillation.
 
-So encircling −1 in the Nyquist plane means that there exists a value of $ s $ in the RHP for which the feedback configuration reinforces the system’s response rather than suppressing it.
+So encircling −1 in the Nyquist plane means that there exists a value of $s$ in the RHP for which the feedback configuration reinforces the system’s response rather than suppressing it.
 
 ---
 
@@ -1000,7 +1002,7 @@ $$
 e(t) = \text{input}(t) - M \cdot \text{feedback}(t)
 $$
 
-Let’s model the feedback phasor with magnitude 1 and phase lag of $ \phi $, so the projection of that vector onto the input axis (0°) is:
+Let’s model the feedback phasor with magnitude 1 and phase lag of $\phi$, so the projection of that vector onto the input axis (0°) is:
 
 $$
 \text{Effective Suppression} = -\cos(\phi)
@@ -1008,7 +1010,7 @@ $$
 
 This cosine curve gives the net suppression effect:
 
-| Phase $ \phi $ | $ -\cos(\phi) $ | Interpretation |
+| Phase $\phi$ | $-\cos(\phi)$ | Interpretation |
 | ---------------- | ------------------ | -------------- |
 | $0^\circ$      | −1                 | Fully subtractive (100% shaded) |
 | $30^\circ$     | ≈ −0.87            | Mostly subtractive |
