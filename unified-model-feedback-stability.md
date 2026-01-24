@@ -551,14 +551,14 @@ Nise presents the same underlying relationship using a different algebraic label
 
 * Encirclement sign: counterclockwise remains positive
 * The interpretation of pole and zero contributions is reversed
-* The algebraic form corresponds to $P - Z $ rather than $ Z - P$
+* The algebraic form corresponds to $P - Z$ rather than $Z - P$
 
 The theory is unchanged; only the labeling differs.
 
 To translate Nise’s formulation into the universal form:
 
 1. Reverse the sign of any encirclement or phase contribution
-   $since (P - Z = -(Z - P))$
+   since $(P - Z = -(Z - P))$
 2. Apply the standard argument-principle relation:
 
 $$
