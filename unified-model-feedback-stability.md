@@ -446,7 +446,7 @@ But it's the same idea - the point $-1$ in the $G(s)H(s)$-plane maps to the orig
 So:
 
 * Encirclement of $\mathbf{-1}$ by the $G(s)H(s)$-plot $\quad\Leftrightarrow\quad$ Encirclement of $\mathbf0$ by the F-plot
-* The question is always: *“Does some point in the RHP make $1 + G(s)H(s) = 0$ ?”*
+* The question is always: *“Does some point in the RHP make* $1 + G(s)H(s) = 0$ *?”*
 
 ---
 ## What Does Nyquist Actually Do?
