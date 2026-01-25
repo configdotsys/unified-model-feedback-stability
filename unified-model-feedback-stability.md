@@ -5,6 +5,7 @@
 
 *Engineering notes and a conceptual synthesis of a working control model.*
 
+---
 
 ## Scope
 
