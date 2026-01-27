@@ -1014,15 +1014,24 @@ This cosine curve gives the net suppression effect:
 | Phase $\phi$ | $-\cos(\phi)$ | Interpretation |
 | ---------------- | ------------------ | -------------- |
 | $0^\circ$      | −1                 | Fully subtractive (100% shaded) |
-| $30^\circ$     | ≈ −0.87            | Mostly subtractive |
-| $90^\circ$     | 0                  | Neutral |
-| $150^\circ$    | ≈ +0.87            | Mostly additive |
-| $180^\circ$    | +1                 | Fully additive (0% shaded) |
+| $30^\circ$     | $-\cos(30^{\circ}\approx −0.87$            | Mostly subtractive |
+| $90^\circ$     | $-\cos(90^{\circ}=0$                  | Neutral |
+| $150^\circ$    | $-\cos(30^{\circ}\approx +0.87$            | Mostly additive |
+| $180^\circ$    | $-\cos(90^{\circ}=+1$                 | Fully additive (0% shaded) |
 
 This directly matches the shaded-bar analogy:
 
 * The shaded portion represents the subtractive component of feedback
 * The unshaded portion represents the reinforcing component
+
+#### Visualization: Shaded Bar = Cosine Projection
+
+So if we let:
+
+* Shaded area = $\frac{1 - \cos(\phi)}{2}$
+* At $\phi = 0^\circ$, this is 0 $\rightarrow$ fully shaded
+* At $\phi = 90^\circ$, this is 0.5 $\rightarrow$ half shaded
+* At $\phi = 180^\circ$, this is 1 $\rightarrow$ no shade (fully additive)
 
 The bar analogy is a qualitative visualization of the cosine projection, providing intuition for how feedback effectiveness varies with phase.
 
