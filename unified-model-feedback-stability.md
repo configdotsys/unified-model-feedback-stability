@@ -1014,10 +1014,10 @@ This cosine curve gives the net suppression effect:
 | Phase $\phi$ | $-\cos(\phi)$ | Interpretation |
 | ---------------- | ------------------ | -------------- |
 | $0^\circ$      | −1                 | Fully subtractive (100% shaded) |
-| $30^\circ$     | $-\cos(30^{\circ}\approx −0.87$            | Mostly subtractive |
-| $90^\circ$     | $-\cos(90^{\circ}=0$                  | Neutral |
-| $150^\circ$    | $-\cos(30^{\circ}\approx +0.87$            | Mostly additive |
-| $180^\circ$    | $-\cos(90^{\circ}=+1$                 | Fully additive (0% shaded) |
+| $30^\circ$     | $-\cos(30)^{\circ}\approx −0.87$            | Mostly subtractive |
+| $90^\circ$     | $-\cos(90)^{\circ}=0$                  | Neutral |
+| $150^\circ$    | $-\cos(30)^{\circ}\approx +0.87$            | Mostly additive |
+| $180^\circ$    | $-\cos(90)^{\circ}=+1$                 | Fully additive (0% shaded) |
 
 This directly matches the shaded-bar analogy:
 
