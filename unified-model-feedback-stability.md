@@ -7,7 +7,7 @@
 
 ---
 
-## Scope
+### Scope
 
 This document presents a consolidated mental model of feedback stability in linear control systems.
 
@@ -15,7 +15,7 @@ The model integrates state-space dynamics, eigenvalues, transfer functions, freq
 
 ---
 
-## Structure of the Discussion
+### Structure of the Discussion
 
 The development proceeds through the following progression:
 
