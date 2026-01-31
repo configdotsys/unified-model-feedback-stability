@@ -1,30 +1,31 @@
-# Unified Model of Feedback Stability
+# A Unified Model of Feedback Stability
 
-This repository contains a technical reference document presenting a unified physical model of feedback stability in linear control systems.
+This repository presents an independent engineering white paper defining a unified physical model of feedback stability in linear control systems.
 
-The document synthesizes multiple analytical representations – state-space dynamics, eigenvalues, pole locations, characteristic equations, and Nyquist analysis – into a single internally consistent framework for reasoning about stability.
+The document integrates state–space dynamics, eigenvalues, pole locations, characteristic equations, and Nyquist analysis into a single internally consistent framework for reasoning about stability.
 
-The emphasis is not on controller design or tuning, but on understanding how different mathematical views of feedback describe the same underlying system behavior.
+The emphasis is on understanding how multiple mathematical representations describe the same underlying system behavior, rather than on controller synthesis or tuning procedures.
 
 ---
-### Scope
 
-The material focuses on:
+## Scope
+
+The material addresses:
 
 * open-loop instability and right-half-plane modes  
-* the relationship between eigenvalues and poles  
-* the role of the closed-loop characteristic equation  
-* the physical meaning of Nyquist encirclement  
+* the relationship between eigenvalues and pole locations  
+* the role of the closed-loop characteristic equation in stability  
+* the physical interpretation of Nyquist encirclement  
 * how feedback suppresses or reinforces unstable dynamics  
 
 ---
 
-### Intended Audience
+## Intended Audience
 
-This repository is written for engineers and students with prior exposure to linear control theory who are seeking a coherent mental model connecting time-domain behavior and frequency-domain stability analysis.
+This work is intended for engineers and advanced students with prior exposure to linear control theory who seek a coherent mental model connecting time-domain behavior and frequency-domain stability analysis.
 
 ---
 
-### Notes
+## Use
 
-This work reflects a synthesis effort developed to preserve understanding across representations, rather than to introduce new theory or alternative formulations.
+The document is intended as a technical reference to support analysis, interpretation, and implementation of feedback systems across multiple representations.
