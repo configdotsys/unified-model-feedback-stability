@@ -1,4 +1,4 @@
-# A Unified Model of Feedback Stability
+# A Unified Physical Model of Feedback Stability in Control Theory
 
 This repository presents an independent engineering white paper defining a unified physical model of feedback stability in linear control systems.
 
