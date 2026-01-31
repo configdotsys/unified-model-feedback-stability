@@ -3,7 +3,7 @@
 *Author: Percival Segui*\
 *Prepared as an independent technical reference*.
 
-*Engineering notes and a conceptual synthesis of a working control model.*
+*An engineering white paper presenting a conceptual synthesis of a working control model.*
 
 ---
 
@@ -1071,6 +1071,6 @@ This document defines a working model for reasoning about feedback stability acr
 
 The model is constrained by established mathematics and control theory and is intended to remain consistent across state-space, transfer-function, and frequency-domain views.
 
-It serves as a reference framework for continued analysis and implementation.
+It serves as a durable reference framework for continued analysis and implementation.
 
 ---
