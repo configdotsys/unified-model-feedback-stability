@@ -1,5 +1,12 @@
 # A Unified Physical Model of Feedback Stability in Control Theory
 
+*Author: Percival Segui*\
+*Prepared as an independent engineering white paper*.
+
+*An engineering white paper presenting a conceptual synthesis of a working control model.*
+
+---
+
 This repository presents an independent engineering white paper defining a unified physical model of feedback stability in linear control systems.
 
 The document integrates state–space dynamics, eigenvalues, pole locations, characteristic equations, and Nyquist analysis into a single internally consistent framework for reasoning about stability.
