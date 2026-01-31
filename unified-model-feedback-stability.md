@@ -1,7 +1,7 @@
 # A Unified Physical Model of Feedback Stability in Control Theory
 
 *Author: Percival Segui*\
-*Prepared as an independent technical reference*.
+*Prepared as an independent engineering white paper*.
 
 *An engineering white paper presenting a conceptual synthesis of a working control model.*
 
